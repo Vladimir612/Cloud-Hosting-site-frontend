@@ -54,6 +54,9 @@ img
         right: 0
         left: 0
         transform: skewY(-3deg)//!!!Important for effect. You wll need this
+        --webkit-transform: skewY(-3deg)
+        --moz-transform: skewY(-3deg)
+        --ms-transform: skewY(-3deg)
         background: #fff
     h1
         font-size: 40px
@@ -85,6 +88,10 @@ img
             position: absolute
             left: 50%
             transform: translate(-50%, 0%)
+
+//Stats
+.stats
+    padding-top: 100px
         
 //Utilities
 .container
@@ -104,6 +111,8 @@ img
     justify-content: center
     align-items: center
     height: 100%
+    &.grid-3
+        grid-template-columns: repeat(3, 1fr)
 .card
     background-color: #fff
     border-radius: 20px
